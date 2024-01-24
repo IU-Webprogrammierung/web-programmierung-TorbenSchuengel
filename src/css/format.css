@@ -6,29 +6,45 @@ body {
   background-color: #fff;
 }
 
-/* Navigation */
-nav {
-  background-color: #333;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* Header mit Logo */
+.header{
+  font-weight: bold;
   display: flex;
+  flex-direction: column;
+  background: teal;
+  padding: 10px 10px;
 }
 
-li {
-  margin: 0;
+/* div logo */
+.logo{
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 2/1;
+  background: teal;
 }
 
-a {
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #fff;
+/* div nav */
+.nav{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
-a:hover {
-  background-color: #555;
+.nav > a{
+  padding: 1em 2em;
+  background: lightgrey;
+ }
+
+/* Breakpoint (classic ab iPad portrait Ansicht aufwärts) */
+@media screen and (min-width: 768px){
+  .header{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav{
+    flex-direction: row;
+    gap: 1em;
+  }
 }
