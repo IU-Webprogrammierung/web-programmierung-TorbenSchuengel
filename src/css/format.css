@@ -64,8 +64,8 @@ h4{
 
 .primary-nav>a {
   padding: 1em 2em;
-  color: #ffffff;
-  background: #8f8f8f;
+  color: #000000;
+  background: #fdfdfd;
 }
 
 .primary-nav a:hover {
