@@ -1,33 +1,39 @@
 /* 
 * Global Styles 
 */
-html, body{
+html,
+body {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   line-height: 1.2;
 }
 
-h1{
+h1 {
   font-size: 2.5rem;
 }
 
-h2{
+h2 {
   font-size: 2rem;
 }
 
-h3{
+h3 {
   font-size: 1.5rem;
 }
 
-h4{
+h4 {
   font-size: 1.25rem;
 }
 
@@ -39,22 +45,23 @@ h4{
   background: #f4f4f4;
 }
 
-.header-inner{
+.header-inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .logo {
   justify-self: flex-start;
   padding: 1em 0;
 }
 
-.logo img{
+.logo img {
   max-width: 60px;
 }
 
 
-/* Primary Nav */
+/* Primary Nav -> ist momentan als untereinander angeordnet für mobile Ansicht schon. Soll später mit einem JavaScript angepasst werden*/  
 .primary-nav {
   display: flex;
   flex: 1 0 100%;
@@ -73,53 +80,65 @@ h4{
 }
 
 
-
-
-
-
-
-/* Header mit Logo */
-.header{
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  background: #8f8f8f;
-  padding: 10px 10px;
+/*
+*  Main Content Area
+*/
+.primary-content {
+  scroll-snap-type: y mandatory; /* Vertikal Scrollen und Snap Points streng einhalten */
+  padding-top: 80px; /* Platz für den Header */
 }
 
-/* div logo */
-.logo{
-  width: 100%;
-  max-width: 240px;
-  aspect-ratio: 2/1;
+.content-section {
+  position: relative;
+  padding: 3em 0;
+  scroll-snap-align: start; /* An der Oberkante jeder Sektion soll gestoppt werden */
+  scroll-margin-top: 80px; /* Platz für den Header */
 }
 
-/* div nav */
-.nav{
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+.section-overlay {
+  color: white;
 }
 
-.nav > a{
-  padding: 1em 2em;
-  color: #ffffff; 
-  background: #8f8f8f;
- }
-
- .nav a:hover {
-  color: #0019fa;
+.section-overlay > div {
+  position: relative;
 }
 
-/* Breakpoint (classic ab iPad portrait Ansicht aufwärts) */
-@media screen and (min-width: 768px){
-  .header{
+/*
+*  Main Content Area
+*/
+
+.primary-content {
+  scroll-snap-type: y mandatory; /* Vertikal Scrollen und Snap Points streng einhalten */
+  padding-top: 80px; /* Platz für den Header */
+}
+
+.content-section {
+  position: relative;
+  padding: 3em 0;
+  scroll-snap-align: start; /* An der Oberkante jeder Sektion soll gestoppt werden */
+  scroll-margin-top: 80px; /* Platz für den Header */
+}
+
+.section-overlay {
+  color: white;
+}
+
+.section-overlay > div {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+  /* Breakpoint (classic ab iPad portrait Ansicht aufwärts) */
+@media screen and (min-width: 768px) {
+  .header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-  .nav{
+  .nav {
     flex-direction: row;
     gap: 1em;
   }
