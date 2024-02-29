@@ -89,25 +89,6 @@ h4{
 /*
 *  Main Content Area
 */
-.primary-content {
-  padding-top: 80px; /* Platz für den Header */
-}
-
-.content-section {
-  position: relative;
-  padding: 3em 0;
-  scroll-margin-top: 80px; /* Platz für den Header */
-}
-
-.section-overlay {
-  color: white;
-}
-
-
-
-/*
-*  Main Content Area
-*/
 
 .primary-content {
   padding-top: 80px; /* Platz für den Header */
@@ -116,6 +97,48 @@ h4{
 .section-overlay {
   color: rgb(0, 0, 0);
 }
+
+.content-section {
+  position: relative;
+  padding: 3em 0;
+  scroll-margin-top: 80px; /* Platz für den Header */
+}
+
+
+
+/*
+*  Hero Area + Content Sections
+*/
+#hero{
+  background-color: darkolivegreen;
+}
+#teasers{
+  position: relative;
+}
+
+.teaserbox{
+  background-color: white;
+  padding: 1em;
+}
+#about{
+  background-color:darkcyan;
+}
+
+#property{
+  background-color:beige
+}
+
+#planning{
+  background-color:cadetblue; 
+}
+
+#construction{
+  background-color:coral;
+}
+
+
+
+
 
 
 /*
