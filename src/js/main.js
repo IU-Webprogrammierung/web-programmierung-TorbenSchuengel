@@ -18,4 +18,30 @@ document.addEventListener("DOMContentLoaded", () => {
             nav.classList.add('nav-closed');
         }
     });
+
+    let scrollToTopBtn = document.getElementById("scroll-top-btn");
+    let rootElement = document.documentElement;
+
+    scrollToTopBtn.addEventListener("click", scrollToTop);
+    function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    function handleScroll() {
+        // Do something on scroll
+        let scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+        if ((rootElement.scrollTop / scrollTotal) > 0.4) {
+            // Show button
+            scrollToTopBtn.classList.add("show-btn");
+        } else {
+            // Hide button
+            scrollToTopBtn.classList.remove("show-btn");
+        }
+    }
+
+    document.addEventListener("scroll", handleScroll);
 });
