@@ -101,9 +101,7 @@ h4 {
   color: white;
 }
 
-.section-overlay > div {
-  position: relative;
-}
+
 
 /*
 *  Main Content Area
@@ -113,19 +111,8 @@ h4 {
   padding-top: 80px; /* Platz für den Header */
 }
 
-.content-section {
-  position: relative;
-  padding: 3em 0;
-  scroll-margin-top: 80px; /* Platz für den Header */
-}
-
 .section-overlay {
   color: rgb(0, 0, 0);
-}
-
-.section-overlay > div {
-  position: relative;
-  z-index: 1;
 }
 
 
