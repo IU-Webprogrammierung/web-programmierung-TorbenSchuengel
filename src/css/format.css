@@ -129,19 +129,3 @@ h4 {
   position: relative;
   z-index: 1;
 }
-
-
-
-  /* Breakpoint (classic ab iPad portrait Ansicht aufwärts) */
-@media screen and (min-width: 768px) {
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav {
-    flex-direction: row;
-    gap: 1em;
-  }
-}
