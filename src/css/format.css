@@ -82,15 +82,28 @@ h4 {
 .primary-nav>a {
   padding: 1em 2em;
   color: #000000;
-  background: #fdfdfd;
+  background: #f4f4f4;
 }
 
 .primary-nav a:hover {
   color: #0019fa;
 }
 
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: flex-end;
+  cursor: pointer;
+}
 
-
+.menu-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+}
 
 
 /*
