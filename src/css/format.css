@@ -3,7 +3,6 @@
 */
 html,
 body {
-  scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   font-weight: 400;
@@ -86,14 +85,12 @@ h4 {
 *  Main Content Area
 */
 .primary-content {
-  scroll-snap-type: y mandatory; /* Vertikal Scrollen und Snap Points streng einhalten */
   padding-top: 80px; /* Platz für den Header */
 }
 
 .content-section {
   position: relative;
   padding: 3em 0;
-  scroll-snap-align: start; /* An der Oberkante jeder Sektion soll gestoppt werden */
   scroll-margin-top: 80px; /* Platz für den Header */
 }
 
