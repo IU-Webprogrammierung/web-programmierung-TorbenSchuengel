@@ -147,8 +147,16 @@ h4 {
   background-size: cover;
 }
 
-#content {
-  background-color: rgb(129, 42, 42);
+#impressum {
+  background-color:darkred
+}
+
+#datenschutz {
+  background-color: cornflowerblue
+}
+
+#kontakt {
+  background-color:forestgreen
 }
 
 #teasers {
