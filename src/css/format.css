@@ -1,36 +1,47 @@
 /* roboto-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* roboto-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* montserrat-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* montserrat-900 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/montserrat-v26-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v26-latin-900.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* 
 * Global Styles 
 */
@@ -141,15 +152,19 @@ h4 {
 *  Main Content Area
 */
 .primary-content {
-  scroll-snap-type: y mandatory;  /* Vertikal Scrollen und Snap Points streng einhalten */
-  padding-top: 80px;  /* Platz für den Header */
+  scroll-snap-type: y mandatory;
+  /* Vertikal Scrollen und Snap Points streng einhalten */
+  padding-top: 80px;
+  /* Platz für den Header */
 }
 
 .content-section {
   position: relative;
   padding: 4em 0;
-  scroll-snap-align: start;  /* An der Oberkante jeder Sektion soll gestoppt werden */
-  scroll-margin-top: 80px;  /* Platz für den Header */
+  scroll-snap-align: start;
+  /* An der Oberkante jeder Sektion soll gestoppt werden */
+  scroll-margin-top: 80px;
+  /* Platz für den Header */
 }
 
 .section-overlay {
@@ -194,7 +209,7 @@ h4 {
 }
 
 #impressum {
-  background-color:darkred
+  background-color: darkred
 }
 
 #datenschutz {
@@ -202,7 +217,7 @@ h4 {
 }
 
 #kontakt {
-  background-color:forestgreen
+  background-color: forestgreen
 }
 
 #teasers {
@@ -338,11 +353,13 @@ h4 {
 
 @media screen and (min-width: 1114px) {
   .primary-content {
-    padding-top: 100px;    /* Platz für den Header */
+    padding-top: 100px;
+    /* Platz für den Header */
   }
 
   .content-section {
-    scroll-margin-top: 100px;    /* Platz für den Header */
+    scroll-margin-top: 100px;
+    /* Platz für den Header */
   }
 
   .header-inner {
