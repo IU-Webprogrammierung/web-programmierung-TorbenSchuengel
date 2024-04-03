@@ -171,13 +171,26 @@ h4 {
   background: rgba(0, 0, 0, 0.33);
 }
 
+.cta-button {
+  padding: 1em 2em;
+  border: 1px solid black;
+  display: inline-block;
+  color: inherit;
+}
+
+.cta-button:hover {
+  background-color: #f4f4f4;
+}
+
 /*
 *  Hero Area + Content Sections
 */
 #hero {
+  display: flex;
   background-color: darkolivegreen;
   background: url(../img/pexels-house.jpg) no-repeat center center;
   background-size: cover;
+  align-items: center;
 }
 
 #impressum {
