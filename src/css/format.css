@@ -147,7 +147,7 @@ h4 {
 
 .content-section {
   position: relative;
-  padding: 3em 0;
+  padding: 4em 0;
   scroll-snap-align: start;  /* An der Oberkante jeder Sektion soll gestoppt werden */
   scroll-margin-top: 80px;  /* Platz für den Header */
 }
@@ -218,6 +218,10 @@ h4 {
   background-color: darkcyan;
 }
 
+#about .w3-content {
+  padding-top: 3em;
+}
+
 #property {
   background-color: beige
 }
@@ -235,7 +239,7 @@ h4 {
 * Global Footer 
 */
 .site-footer {
-  padding: 1em 0;
+  padding: 3em 0;
 }
 
 #scroll-top-btn {
